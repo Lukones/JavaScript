@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu primeiro programa</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Olá, Mundo!</h1>
+        <p>Eu sou o Lucas, estou nesse momento aprendendo sobre JavaScript</p>
+    </div> 
+    <script>
+        /* Número INTEIROS: (INT)*/
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+        var s = n2 + n1
+        window.alert('Os valores digitados foram: ' + n1 + ', ' + n2 + ' e sua soma é de: ' + s)
+        /* Números QUEBRADROS: (FLOAT)*/
+        var n1 = Number.parseFloat(window.prompt('Digite um número: '))
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: '))
+        var s = n2 + n1
+        window.alert('Os valores digitados foram: ' + n1 + ', ' + n2 + ' e sua soma é de: ' + s)
+        /* Números AUTOMÁTICOS: (NUMBER)*/
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var s = n2 + n1
+        window.alert('Os valores digitados foram: ' + n1 + ', ' + n2 + ' e sua soma é de: ' + s)
+        /* Convertendo número em String*/
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+        var s = n2 + n1
+        window.alert('Os valores digitados foram: ' + String(n1) + ', ' + String(n2) + ' e sua soma é de: ' + s.toString()) /* Temos os dois jeitos String() e x.toString()*/
+        /* Usando o Template String - ${}*/
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+        var s = n2 + n1
+        window.alert(`Os valores digitados foram: ${n1}, ${n2} e sua soma é de: ${s}`)
+    </script>
+</body>
+</html>

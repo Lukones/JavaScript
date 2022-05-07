@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head> 
+
+<body>
+    
+    <header>
+
+        <div class="container-cabeça">
+            <h1>Vamos contar</h1>
+        </div>
+
+    </header>
+
+    <section>
+
+        <div class="container-corpo">
+            
+            <div id="ini">
+                <label for="Inicio">Inicio: </label>
+                <input type="number" name="Inicio" id="Inicio">
+            </div>
+
+            <div id="end">
+                <label for="Fim">Fim: </label>
+                <input type="number" name="Fim" id="Fim">
+            </div>
+
+            <div id="pass">
+                <label for="Passo">Passo: </label>
+                <input type="number" name="Passo" id="Passo">
+            </div>
+
+            
+            <div id="verificar">
+                <input type="submit" value="Contar" id="cont" onclick="contador()">
+            </div>
+
+            <div id="resultado">
+
+                <h2 id="txt">
+                    <p id="ct">Preparando a contagem...</p>
+                </h2>
+
+            </div>
+
+            
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container-rodape">
+            <p>© Lukones</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

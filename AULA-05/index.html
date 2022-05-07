@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu primeiro programa</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Olá, Mundo!</h1>
+        <p>Eu sou o Lucas, estou nesse momento aprendendo sobre JavaScript</p>
+    </div> 
+    <script>
+        
+        /* Atribuições simples */
+        var a = 5 + 3
+        var b = a % 5
+        var c = 5 * b ** 2 // Primeiro a fazer é o **
+        var d = 10 - a / 2 // Primeiro a fazer é o /
+        var e = 6 * 2 / d // primeiro a fazer é o *
+        var f =  b % e + 4 / e // primeiro a fazer é o %, depois / e por ultimo +
+        
+        /* Auto-atribuições */
+        var n = 3
+        n = n + 4 // A partir daqui a cada atribuição a anterior será substituida / (n += 4)...
+        n = n - 5 // ...Se um variavel for receber uma atribuição que seja ela mesma usamos (n -= 5)
+        n = n * 4 // (n *= 4)
+        n = n / 2 // ( n /= 2)
+        n = n ** 2 // ( n **= 2)
+        n = n % 5 // ( n %= 5)
+        
+        /* Incrimento  */
+        var x = 10
+        x-- // (subtrai - 1)
+        x++ //(soma + 1)
+        --x // (subtrai - 1)
+        ++x //(soma + 1)
+        
+        /* Relacionais */
+        5 > 2 // TRUE
+        7 < 4 // FALSE
+        8 >= 8 // TRUE
+        9 <= 7 // FALSE
+        5 == 5 // TRUE
+        4 != 4 // FALSE
+        
+        /* Identidade */
+        5 == 5 // TRUE, O peso do numero é o tipo são iguais - 
+        5 == "5" // TRUE, O peso do numero são iguais, mas tipo deles não, porém o JS considera pelo peso 
+        5 === "5" // FALSE, Para analisar o tipo usamos 3 ssinais de =, assim ele analisa o peso e o tipo
+        5 === 5 // TRUE, Tudo igual tipo e peso
+        
+        /* Lógicos */
+        // ! // negação - - 1º
+        // && // conjução - - 2º
+        // || // disjunção - - 3º
+        // A ordem de Precedência - 1º [(), **, /, ...] 2º [>, <, >=, ...] 3º [!] 4º [&&] 5º [||]
+        
+        /* Ternário */
+        teste ? A : B // O teste vai ter uma resposta.. caso TRUE mostra o A, caso FALSE mostra o B
+        1 == 1 ? 'CERTO' : 'ERRADO' // Nesse caso vai mostrar na tela CERTO pq 1 é igual a 1 
+        2 != 2 ? 'CERTO' : 'ERRADO' // Nesse caso vai mostrar na tela ERRADO pq 2 é igual a 2
+    </script>
+</body>
+</html>

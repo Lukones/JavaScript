@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head> 
+
+<body>
+    
+    <header>
+
+        <div class="container-cabeça">
+            <h1>Verificador de Idade</h1>
+        </div>
+
+    </header>
+
+    <section>
+
+        <div class="container-corpo">
+            
+            <div id="nascimento">
+                <label for="nasci">Ano de nascimento: </label>
+                <input type="number" name="nascimento" id="nasci">
+            </div>
+
+            <div id="sexo">
+
+                <label id="sex" for="sex">Sexo: </label>
+                
+                <input type="radio" name="genero" value="masc" id="genero" checked>
+                <label id="selec" for="Masculino">Masculino</label>
+                
+                <input type="radio" name="genero" value="fem" id="genero">
+                <label id="selec" for="Feminino">Feminino</label>
+
+
+            </div>
+
+            <div id="verificar">
+                <input type="submit" value="verificar" id="veri" onclick="verificador()">
+            </div>
+
+            <div id="resultado">
+
+                <h2 id="txt">
+                    <p>Preencha os dados acima!</p>
+                </h2>
+
+                <div id="containerft"><img width="200px" src="" alt="" id="ft"></div>
+
+            </div>
+
+            
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container-rodape">
+            <p>© Lukones</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

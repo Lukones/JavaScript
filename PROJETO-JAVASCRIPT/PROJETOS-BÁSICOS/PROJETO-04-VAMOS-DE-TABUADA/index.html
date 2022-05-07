@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head> 
+
+<body>
+    
+    <header>
+
+        <div class="container-cabeça">
+            <h1>Vamos de Tabuada</h1>
+        </div>
+
+    </header>
+
+    <section>
+
+        <div class="container-corpo">
+            
+            <div id="tabuada-container">
+                <div id="ini">
+                    <label for="Número">Número: </label>
+                    <input type="number" name="tabuada" id="tabuada">
+                </div>
+                
+                <div id="verificar">
+                    <input type="submit" value="Gerar Tabuada" id="cont" onclick="gerador()">
+                </div>
+            </div>
+
+            <div id="resultado">
+
+                <select name="tabuada" id="seltab" size="10">
+                       <option> Digite um nº acima! </option>
+                </select>
+            </div>
+
+            
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container-rodape">
+            <p>© Lukones</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
